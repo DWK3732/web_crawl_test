@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from flask import Flask, render_template
 
-url = u'https://ko.wikipedia.org/wiki/웹_크롤러'
+url = u'https://en.wikipedia.org/wiki/Web_crawler'
 res = requests.get(url)
 
 html = BeautifulSoup(res.content,"html.parser")
